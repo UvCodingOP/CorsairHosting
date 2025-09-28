@@ -155,9 +155,7 @@ const Home = () => {
         <motion.div
           className={`show-offs py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[${
           theme ? "#131B29" : "#fff"
-        }] grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 max-w-6xl mx-auto z-0 text-${
-          theme ? "#fff" : "black"
-        }`}
+        }] grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 max-w-6xl mx-auto z-0 ${theme ? "text-white" : "text-black"}`}
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
